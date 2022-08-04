@@ -1,0 +1,27 @@
+<xml>
+        <names>
+                <name>Lydia Pezzullo</name>
+<name>Lydia G. Pezzullo</name>
+
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Pezzullo</sort_name>
+        <position>Research Coordinator</position>
+        <program>Computer Science</program>
+	<school>University of Florida</school>
+	<email>lpezzullo@ufl.edu</email>
+<bio>Lydia is a Research Coordinator for the Camp Dialogs and FLECKS projects. She has a background in the behavioral science and administration fields and holds a B.S. in Cognitive and Brain Sciences, summa cum laude, from Tufts University.</bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Cognitive and Brain Sciences</subject>
+                        <graduation>2016</graduation>
+                        <school>Tufts University</school>
+			<details>
+			</details>
+        	</degree>
+
+    </degrees>
+
+</xml>

@@ -1,0 +1,24 @@
+<xml>
+<names>
+<name>Toni Earle-Randell</name>
+<name>Toni V Earle-Randell</name>
+<name>Toni Vernett Earle-Randell</name>
+</names>
+<sort_name>Earle-Randell</sort_name>
+
+<position>B.A. Student</position>
+<program>Computer Science</program>
+<school>University of Florida</school>
+<email>tearlerandell@ufl.edu</email>
+<bio>
+Toni is a fourth-year undergraduate Computer Science student with a minor in Educational Technology, and she is mentored by Research Scientist Mehmet Celepkolu. She is currently part of the FLECKS project. 
+</bio>
+<degrees>
+<degree>
+<abbrev>B.A.</abbrev>
+<subject>Education Sciences</subject>
+<graduation>Expected 2022</graduation>
+<school>University of Florida</school>
+</degree>
+</degrees>
+</xml>

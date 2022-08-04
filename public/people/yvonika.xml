@@ -1,0 +1,32 @@
+<xml>
+<names>
+<!--The first name listed here is the one that will show on your individual page-->
+<name>Yvonika Auguste</name>
+<!--Additional names are just to be extra-sure that any way your name would show up on a pub, it gets linked to you-->
+<name>Yvonika A. Auguste</name>
+</names>
+  
+<sort_name>Auguste</sort_name>
+<!--Here are the recognized positions you can choose from:
+   Ph.D. Student
+	Ph.D. Candidate
+	Undergraduate Researcher
+	Postdoctoral Research Associate
+-->
+<position> B.S. Student </position>
+<program>Health Education and Behavior </program>
+<school>University of Florida</school>
+<email>augusteyvonika@ufl.edu</email>
+<bio>
+Yvonika is currently an undergraduate researcher working on the Camp DIALOGS project under PH.D student, Xiao Tian.
+</bio>
+<degrees>
+<degree>
+<!--Abbreviations are B.S., B.A., M.S., etc-->
+<abbrev>B.S.</abbrev>
+<subject>B.S, Health Education and Behavior</subject>
+<graduation>Expected 2024</graduation>
+<school>University of Florida</school>
+</degree>
+</degrees>
+</xml>

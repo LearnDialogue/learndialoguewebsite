@@ -1,0 +1,52 @@
+<xml>
+<names>
+<!--The first name listed here is the one that will show on your individual page-->
+<name>Nick Lytle</name>
+<!--Additional names are just to be extra-sure that any way your name would show up on a pub, it gets linked to you-->
+<name>Nicholas Lytle</name>
+</names>
+<sort_name>Lytle</sort_name>
+<!--Here are the recognized positions you can choose from:
+   Ph.D. Student
+	Ph.D. Candidate
+	Undergraduate Researcher
+	Postdoctoral Research Associate
+-->
+<position>Postdoctoral Research Associate</position>
+<program>Computer Science</program>
+<school>University of Florida</school>
+<email>nlytle@ufl.edu</email>
+<bio>
+<!--HOW TO WRITE YOUR BIO: 
+
+You can play with the order of this info a bit but you should include all of this information. THIRD PERSON is not optional.
+
+0. Write in third person.
+
+1. Say what program you're in at UF, who your advisor is, what degrees you already have and where you got them. 
+
+2. If you're being funded by a prestigious fellowship or scholarship, like the NSF Graduate Research Fellowship, you can list that too. 
+
+3. Characterize your relevant background/skill set (maybe you worked as a teacher, a software engineer, or had done previous research). 
+
+4. State your research focus over the past semester/year - if you're new to the group, talk to your mentor/project teammates about what might be good to put here or check out their bios for inspiration.
+
+5. Go back and make sure it's ALL in third person!-->
+Nicholas Lytle is a Postdoctoral Scholar funded through the CRA's Computing Innovation Fellowship. He received his undergraduate degree from the University of Virginia and his PhD from North Carolina State University. His research in the Game2Learn Lab under Dr. Tiffany Barnes at North Carolina State University was centered on effective design of computational thinking activities within core K-12 courses. His focus with the LearnDialogue Lab is on developing adaptive technologies for aiding students learning to program in these contexts and allowing teachers to effectively introduce programming and computational thinking in their classrooms.
+</bio>
+<degrees>
+<degree>
+<!--Abbreviations are B.S., B.A., M.S., etc-->
+<abbrev>Ph.D.</abbrev>
+<subject>Computer Science</subject>
+<graduation>2020</graduation>
+<school>North Carolina State University</school>
+</degree>
+<degree>
+<abbrev>B.S.</abbrev>
+<subject>Computer Science</subject>
+<graduation>2016</graduation>
+<school>University of Virginia</school>
+</degree>
+</degrees>
+</xml>

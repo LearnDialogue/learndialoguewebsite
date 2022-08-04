@@ -1,0 +1,22 @@
+<xml>
+<names>
+<name>John Hoang</name>
+<name>John Tran Hoang</name>
+</names>
+<sort_name>Hoang</sort_name>
+
+<position>B.A. Student</position>
+<program>Computer Science</program>
+<school>University of Florida</school>
+<email>jhoang1@ufl.edu</email>
+<bio>
+John is a third-year undergraduate Computer Science student. He is currently working on the Camp DIALOGS project under Postdoctoral Research Associate, Nick Lytle.</bio>
+<degrees>
+<degree>
+<abbrev>B.A.</abbrev>
+<subject>Computer Science</subject>
+<graduation>Expected 2023</graduation>
+<school>University of Florida</school>
+</degree>
+</degrees>
+</xml>

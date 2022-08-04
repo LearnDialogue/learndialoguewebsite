@@ -1,0 +1,49 @@
+<xml>
+	<names>
+<!--The first name listed here is the one that will show on your individual page-->
+<!--Additional names are just to be extra-sure that any way your name would show up on a pub, it gets linked to you-->
+		<name>Kristy Elizabeth Boyer</name>
+		<name>Kristy Boyer</name>
+		<name> Kristy E. Boyer</name>
+		<name>K.E. Boyer</name>
+		<name>K. Boyer</name>
+	</names>
+	<sort_name>Boyer</sort_name>
+<!--Here are the recognized positions you can choose from:
+   Ph.D. Student
+   Ph.D. Candidate
+   Undergraduate Researcher
+   Postdoctoral Research Associate
+-->
+<position>Assistant Professor</position>
+<email>keboyer@ncsu.edu</email>
+<bio>
+Kristy Elizabeth Boyer is an Assistant Professor of Computer Science at North Carolina State University. Her research focuses on how to support learning with natural language dialogue and intelligent systems. She is particularly interested in computer science education research and in investigating how machine learning can help us understand social, cognitive, and affective phenomena in human interactions. Boyer holds a Ph.D. in Computer Science from North Carolina State University, an M.S. in Applied Statistics from the Georgia Institute of Technology, and a B.S. in Mathematics and Computer Science from Valdosta State University. She has been recognized with an NSF Graduate Research Fellowship. She is also a founding and current member of the Executive Steering Committee of the STARS Alliance for Broadening Participation in Computing, was Program Co-Chair of the 2014 International Conference on Intelligent Tutoring Systems, and is Sponsorship Chair for the 2015 Association for Computational Linguistics SIGDIAL Meeting on Discourse and Dialogue. 
+
+</bio>
+<degrees>
+<degree>
+<abbrev>Ph.D.</abbrev>
+<subject>Computer Science</subject>
+<graduation>2010</graduation>
+<school>North Carolina State University</school>
+<details>
+<detail>
+Structural and Dialogue Act Modeling in Task-Oriented Tutorial Dialogue
+</detail>
+</details>
+</degree>
+<degree>
+<abbrev>M.S.</abbrev>
+<subject>Applied Statistics</subject>
+<graduation>2000</graduation>
+<school>Georgia Institute of Technology</school>
+</degree>
+<degree>
+<abbrev>B.S.</abbrev>
+<subject>Mathematics and Computer Science</subject>
+<graduation>1999</graduation>
+<school>Valdosta State University</school>
+</degree>
+</degrees>
+</xml>

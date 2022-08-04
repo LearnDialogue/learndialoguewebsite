@@ -1,0 +1,24 @@
+<xml>
+<names>
+<name>Aisha Chung Galdo</name>
+<name>Aisha C. Galdo</name>
+<name>Aisha Galdo</name>
+</names>
+<sort_name>Galdo</sort_name>
+
+<position>B.A. Student</position>
+<program>Education Sciences</program>
+<school>University of Florida</school>
+<email>aishagaldo@ufl.edu</email>
+<bio>
+Aisha Galdo is an undergraduate student mentored by Ph.D. student, Mehmet Celepkolu. Her current research aims to improve middle school student learning outcomes in computer science education.
+</bio>
+<degrees>
+<degree>
+<abbrev>B.A.</abbrev>
+<subject>Education Sciences</subject>
+<graduation>Expected 2022</graduation>
+<school>University of Florida</school>
+</degree>
+</degrees>
+</xml>

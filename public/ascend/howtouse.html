@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Ascend</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="stylesheet" href="_shared/h5bp/css/normalize.min.css">
+<link rel="stylesheet" href="_shared/h5bp/css/main.css">
+<script src="_shared/h5bp/js/vendor/modernizr-2.6.2.min.js"></script>
+
+<!-- Common style -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="_shared/master.css" />
+<script type="text/javascript" src="_shared/master.js"></script>
+
+<!-- Additional files here -->
+
+<!-- Async Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43086120-1', 'ncsu.edu');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body id='top'>
+	<!--[if lt IE 7]>
+	<p class="chromeframe">You are using an <strong>outdated</strong> browser. 
+	Please <a href="http://browsehappy.com/">upgrade your browser</a> or 
+	<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> 
+	to improve your experience.</p>
+	<![endif]-->
+
+	<!-- HEADER -->
+	<!--header role="banner" id="top">
+		<nav role="global">How to Use</nav>
+	</header-->
+
+	<!-- MAIN CONTENT -->
+	<article>
+		<nav>
+			<script type="text/javascript">
+		writePulldownFirstLevel();
+	    </script>
+		</nav>
+
+		<header>How to Use Ascend</header>
+
+		<section role="region">
+			<header>
+				<a id='checkout'></a>Set up (after installing)
+			</header>
+			<ol class='list'>
+			<li>Go to Window, Show View, Other</li>
+			<li>Under Ascend, select Chat and Ascend
+				<ul>
+				<li>If you don't see Ascend, then you need to configure JRE 1.8 in Eclipse. 
+				For guidance, see <A HREF="#configureJRE">the section on this topic</A> 
+				at the bottom of this page.</li>
+				<li>If the Ascend icons are still not visible after configuring JRE 1.8, 
+				then you need to delete any previous versions of Java (other than Java SE 8) 
+				from the <i>Installed JREs</i> page and then try again.</li>
+				</ul>
+			</li>
+			<li>These two views should now appear in your Eclipse IDE, similar to other 
+			views like the Console and Package Explorer. The Chat view will allow you to 
+			exchange chat messages with your partner, in a format similar to GChat. The 
+			Ascend view will allow you to login to Ascend and choose a partner to 
+			collaborate with. If you cannot find these two new views, you may need 
+			to update your Java version to 1.8 (see this website's
+			<span class="s2"><a href="./prerequisites.html">"Prerequisites"</a></span> page).</li>
+			<li>You can click and drag either of these views around the Eclipse IDE 
+			to place them wherever you prefer. Below is a screenshot of one potential set up.</li>
+			<img src="_shared/images/howToUse1.png" style="width:500px;height:400px;">
+			</ol></p>
+		</section>
+		<section role="region">
+			<header>
+				<a id='addaccount'></a>Login
+			</header>
+			To log into Ascend, click the prompt in the Ascend view. It 
+			will open a pop-up window in which you will log in with an 
+			existing Gmail account. <br/><br/>
+			You can use your university email (if your university uses 
+			Gmail) or a personal Gmail account. <br/> 
+		</section>
+		<section role="region">
+			<header>
+				<a id='addbuddies'></a>Add contact
+			</header>
+			Once you have logged into Ascend, you will see a list of all your contacts who are 
+			currently also logged on and available to collaborate. If you would like to collaborate 
+			with someone who is not already in your contact list, follow the instructions below.
+			<ol class='list'>
+			<li>In the Ascend view, click "Add Contact"</li>
+			<li>In the pop-up box, type in a name for this contact, and the contact's Gmail address.</li>
+			<li>Click "Add"</li>
+			</ol>
+			</p>Note: Contacts will only appear in the list if they are currently logged in and available 
+			to collaborate (i.e. not already in a session with another user).</p>
+
+		</section>
+		<section role="region">
+			<header>
+				<a id='invitation'></a>Send an invitation to collaborate
+			</header>
+			Prerequisite: You must be logged in. When logged in, your contact 
+			list will appear in the Ascend view. Note that the only contacts who 
+			will appear in the list are those who are currently logged in and 
+			not already in a collaborative session with someone else. 
+			<ol class='list'>
+			<li>Locate your desired partner in the contact list and right click
+			on their name</li>
+			<li>Select "Start collaboration"</li>
+			<li>In the pop-up window, select a project from your current workspace to share<br/>
+			<b>Note:</b> Only Java projects can be shared (not General projects)</li>
+			<li>Wait for your partner to accept the invitation (note: if it is a large project, it 
+			may take up to a minute for all the files to transfer)</li>
+			</ol></p>
+		</section>
+		<section role="region">
+			<header>
+				<a id='accept'></a>Accept an invitation to collaborate
+			</header>
+			If your partner sends you an invitation to collaborate, a pop-up window will notify you.</p>
+		</section>
+		<section role="region">
+			<header>
+				<a id='chat'></a>Chat
+			</header>
+			Prerequisite: You must be logged in. When logged in, your contact 
+			list will appear in the Ascend view. 
+			<ol class='list'>
+			<li>Locate your desired partner in the contact list and right click
+			on their name</li>
+			<li>Select "Send instant message"</li>
+			<li>Your message (and any replies from your partner) will appear in the Chat view</li>
+			</ol></p>
+		</section>
+		<section role="region">
+			<header>
+				<a id='accept'></a>Pair Programming in Ascend
+			</header>
+			When you begin a collaboration with another user, you will start out as either the
+			<b>Driver</b> or the <b>Navigator</b>.</p>
+			If you are the Driver, you can modify your project's code and file structure as you
+			normally would if programming alone. Your partner will see these changes in real time.</p>
+			If you are the Navigator, you cannot modify the code or file structure, but you have the 
+			freedom the view anywhere in the given project while your partner updates the code. You 
+			will be able to see any modification that your partner makes in real time. </p>
+		</section>		
+		<section role="region">
+			<header>
+				<a id='accept'></a>Switch Roles
+			</header>
+			At any point during a collaboration, either partner can click the "Switch Roles" button 
+			in the Ascend view to switch who is Driver and who is Navigator. A pop-up window will 
+			appear to notify the other partner.</p>
+		</section>
+		<section role="region">
+			<header>
+				<a id='close'></a>Leave / Close the pair progrogramming session
+			</header>
+			You can end the collaborative session at any time in the Ascend view. There is also a button
+			in the Ascend view to Log off from Ascend. If either partner logs off, the collaborative
+			session automatically ends.</p>
+		</section>
+		<section role="region">
+		<A NAME="configureJRE">
+			<header>
+				<a id='accept'></a>Configure JRE 1.8 in Eclipse
+			</header>
+			<ol class='list'>
+			<li>In Eclipse, go to the <i>Preferences</i> menu</li>
+			<li>Go to <i>Java</i>, and then <i>Installed JREs</i></li>
+			<li>Select <i>Java SE8</i> and click "OK"</li>
+			<li>If <i>Java SE 8</i> is not visible, then click on <i>Search</i> and find the location 
+			of it and then select it.</li>
+			</ol></p>
+		</section>
+		
+		
+
+	        <section role="region">
+                        <header>
+                                <a id='bugreporting'></a>Report Bugs
+                        </header>
+                        When a bug occur, please fill out <A HREF="https://docs.google.com/a/learndialogue.org/forms/d/e/1FAIpQLSet8slK4yQMMYs43dbIt6p4X5EVI4aH-vZ6dmfi5N3_UXx2wA/viewform">this form</A> to inform the developers, so that it could be fixed. Thank you very much! Please contact ascend.bug.reporting@gmail.com for any more questions.
+                </section>
+
+        </article>
+
+	<!-- FOOTER  (this will add a "Back to Top" button)-->
+<!--	<footer role="contentinfo">
+		<script type="text/javascript">
+	    writeFooter();
+	</script>
+	</footer>
+	-->
+
+</body>
+</html>
+
+
+
+
+
+

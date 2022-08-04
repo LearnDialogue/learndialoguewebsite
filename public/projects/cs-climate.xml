@@ -1,0 +1,20 @@
+<xml>
+	<name>CS-CLIMATE</name>
+	<sort_id>3</sort_id>
+	<tagline>Fostering collaborative dialogue for rigorous learning and diverse student retention in computer science. (Funding: National Science Foundation, CNS-1453520, CNS-1622438)</tagline>
+	<description>
+
+	&lt;p&gt;&lt;h4&gt;Introduction&lt;/h4&gt;
+	&lt;p&gt;A rich body of evidence suggests that collaborative learning holds many benefits for computer science students, yet there is growing recognition that neither collaborative learning itself, nor the innovative curricula in which it may be situated, are “magic bullets” capable of single-handedly solving the computing pipeline problem. In contrast to being a one-size-fits-all solution, collaborative learning is highly dependent upon characteristics of the collaborators and on fine-grained interactions. This project is led by PI Kristy Boyer at the University of Florida and is funded by the National Science Foundation through a CAREER award.&lt;p&gt;
+	
+	&lt;p&gt;&lt;h4&gt;Project Description&lt;/h4&gt;
+	&lt;p&gt;The CS-CLIMATE project is investigating the facets of collaborative dialogue that are particularly effective for fostering learning, sense of identity, motivation, and continued engagement in computer science for diverse learners. The project is organized around three thrusts.&lt;p&gt; 
+
+	&lt;p&gt;&lt;b&gt;Thrust 1. Collect a rich set of computer science collaborative learning data.&lt;/b&gt; We implemented studies with hundreds of CS1 students and investigated their experiences during collaborative coding. By examining student reflections on collaborative coding, we found important themes centered around self-efficiency, social growth, deeper learning and confidence in coding. We also investigated the effects and prominence of these themes by gender. These datasets have provided a ground-truth measure of students' collaborative approaches within computer science learning tasks.&lt;p&gt;
+
+	&lt;p&gt;&lt;b&gt;Thrust 2. Examine the fine-grained facets of collaborative dialogue that are particularly effective for diverse computer science learners.&lt;/b&gt; The project is examining the relationship between dialogue patterns and outcomes. To analyze these dialogues, we have used and developed a suite of manual and automated natural language dialogue analysis methods for tasks such as dialogue act classification and reference resolution. The findings have revealed features in students’ collaborative dialogue that are associated with improved performance in programming tasks or motivational outcomes, such as stress and perceived competence.&lt;p&gt; 
+
+	&lt;p&gt;&lt;b&gt;Thrust 3. Implement and evaluate evidence-based pedagogical support for fostering effective collaborative dialogue.&lt;/b&gt; The project is conducting experimental studies to identify best practices to implement pair programming activities with CS1 students. These studies evaluate how different forms of structuring collaboration can improve students' outcomes.&lt;p&gt;
+
+	</description>
+</xml>

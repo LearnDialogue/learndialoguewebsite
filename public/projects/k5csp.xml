@@ -1,0 +1,12 @@
+<xml>
+	<name>K-5 CS Principles</name>
+	<sort_id>10</sort_id>
+	<tagline>Developing an upper elementary Computer Science Principles course. (Funding: Wake County Public School System)</tagline>
+	<description>
+&lt;p&gt;&lt;h4&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;There is a growing need of computer science graduates in the workforce and to meet those demands we need more students to take computer science courses and consider it as a career option. Research have indicated that the shortage of students taking computer science in university or high school is due to a lack of exposure to the subject at an early age. Many students have set career goals by the time they reach high school and they identify with the professions on their list. Students who haven't been informed about computer science in the past would not realize that computer science is an option for them. In response, there have been been efforts to introduce computer science courses into middle schools, however, little effort has been made to design computer science curricula for elementary schools.&lt;p&gt;
+
+&lt;p&gt;&lt;h4&gt;Project Description&lt;/h4&gt;
+&lt;p&gt;The K-5 CS Principles project (Wake County Public School System) aims to design and implement curricula for children from Kindergarten through 5th grade. The curricula will cover both the breadth and depth of computer science and promote computational thinking in everyday life. The curricula covers topics including algorithms, programming, computers in society, robotics, and AI. Lessons and activities in the curricula emphasize the importance of computing in society and include projects such as researching the benefits of specific computing technologies, and programming games in Scratch to support learning.&lt;p&gt;
+	</description>
+</xml>

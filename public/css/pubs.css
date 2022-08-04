@@ -1,0 +1,106 @@
+a.bibauthorlink {
+	color: #000;
+}
+
+a.bibauthorlink:hover {
+	text-decoration: none;
+/*	color: #CCC; */
+/*	color: #A20000; */
+	color: #AAA;
+}
+
+#content {
+	text-align: left;
+}
+
+div.sheader{
+	margin-bottom: 1%;
+	margin-top: 2%;
+	border-bottom: 1px solid #0021A5; 
+	font-weight: normal;
+	font-size: 140%;
+}
+
+div.sheader:nth-child(2) {
+	margin-top: 0;
+}
+
+
+td.sheader{
+	margin-bottom: 1%;
+	border-bottom: 1px solid #0021A5;
+	font-weight: normal;
+	font-size: 150%;
+}
+
+
+td.theader{
+/*	display: none; */
+
+	padding-top: 0;
+	padding-left: 0;
+	font-weight: normal;
+	font-size: 125%;
+
+}
+
+
+.bibref {
+	visibility: hidden;
+	max-width: 10px;
+}
+
+
+.bibitem {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 100%;
+}
+
+table.result {
+	margin-top: 0;
+}
+
+#pub_sort {
+	padding-top: 15px;
+	float: right;
+}
+
+#pub_h1 {
+	float: left;
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#pub_head {
+	float: left;
+	width: 100%;
+	border-bottom: 2px solid #0021A5;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+div.bibentry-label {
+	padding-top: 15px;
+}
+
+pre.purebibtex, div#bibentry-reference {
+	background: #e8e8e8;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 0 0 2px #222222;
+}
+
+div.bibentry-by {
+	margin-top: 0;
+}
+
+div.rheader h2 {
+	margin-bottom: 10px;
+}
+
+div.bibentry-document-link {
+	padding-top: 10px;
+	margin-bottom: 0px;
+}

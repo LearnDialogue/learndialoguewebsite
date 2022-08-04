@@ -1,0 +1,32 @@
+<xml>
+<names>
+<!--The first name listed here is the one that will show on your individual page-->
+<name>Katrina Barredo</name>
+<!--Additional names are just to be extra-sure that any way your name would show up
+on a pub, it gets linked to you-->
+</names>
+<!--Here are the recognized positions you can choose from:
+ Ph.D. Student
+Ph.D. Candidate
+Undergraduate Researcher
+Postdoctoral Research Associate
+-->
+<position>Undergraduate Researcher</position>
+<program>Human-Centered Computing</program>
+<school>University of Florida</school>
+<email>kbarredo@ufl.edu</email>
+<bio>
+Kat is a fourth-year undergraduate Computer Science student mentored by Postdoctoral Research Associate Nick Lytle. Her research interests include VR/AR applications for research and education, human-computer interaction, and UI/UX design. She is currently a part of the Camp DIALOGS project.
+</bio>
+<degrees>
+<degree>
+<!--Abbreviations are B.S., B.A., M.S., etc-->
+<abbrev>B.S.</abbrev>
+<subject>Computer Science</subject>
+<graduation>Expected 2022</graduation>
+<school>University of Florida</school>
+</degree>
+</degrees>
+<research>
+</research>
+</xml>

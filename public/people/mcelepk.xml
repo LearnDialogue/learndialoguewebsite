@@ -1,0 +1,43 @@
+<xml>
+        <names>
+                <name>Mehmet Celepkolu</name>
+<name>Memet Celepkolu</name>
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Celepkolu</sort_name>
+        <position>Research Scientist</position>
+        <program>Computer Science</program>
+	<school>University of Florida</school>
+	<email>mckolu@ufl.edu</email>
+<bio>Mehmet Celepkolu is a Research Scientist in the Department of Computer &amp; Information Science &amp; Engineering. His research interests include computer science education, instructional design, collaborative/pair programming environments and natural language processing.</bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>Ph.D.</abbrev>
+                        <subject>Computer Science</subject>
+                        <graduation>2020</graduation>
+                        <school>University of Florida</school>
+			<details>
+			</details>        
+        	</degree>
+
+		<degree>
+                        <abbrev>M.S.</abbrev>
+                        <subject>Computer Engineering</subject>
+                        <graduation>2012</graduation>
+                        <school>University of Florida</school>
+                        <details>
+                        </details>
+                </degree>
+
+		<degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Computer and Educational Technologies</subject>
+                        <graduation>2010</graduation>
+                        <school>Ankara University, Turkey</school>
+                        <details>
+                        </details>
+                </degree>
+    </degrees>
+
+</xml>

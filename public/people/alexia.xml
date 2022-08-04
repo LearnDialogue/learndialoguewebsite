@@ -1,0 +1,32 @@
+<xml>
+<names>
+<!--The first name listed here is the one that will show on your individual page-->
+<name>Alexia Charis Martin</name>
+<name>Alexia Martin</name>
+<!--Additional names are just to be extra-sure that any way your name would show up on a pub, it gets linked to you-->
+</names>
+<sort_name>Martin</sort_name>
+<!--Here are the recognized positions you can choose from:
+   Ph.D. Student
+	Ph.D. Candidate
+	Undergraduate Researcher
+	Postdoctoral Research Associate
+-->
+<position>Undergraduate Researcher</position>
+<program>Computer Engineering</program>
+<school>University of Florida</school>
+<email>a.martin1@ufl.edu</email>
+<bio>
+Alexia is an Undergraduate Researcher in Computer Science, mentored by Ph.D. student, Kimberly Ying. She is a 2nd-year Computer Engineering student who loves to watch Doctor Who, cook, and listen to DFTBA podcasts in her free time. The project she is working on with Kimberly Ying aims to eliminate the gender gap in CS.
+
+</bio>
+
+<degrees>
+<degree>
+<abbrev>B.S.</abbrev>
+<subject>Computer Engineering</subject>
+<graduation>Expected 2022</graduation>
+<school>University of Florida</school>
+</degree>
+</degrees>
+</xml>

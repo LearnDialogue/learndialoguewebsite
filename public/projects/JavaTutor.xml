@@ -1,0 +1,35 @@
+<xml>
+	<name>JavaTutor</name>
+	<sort_id>9</sort_id>
+	<tagline>A natural language dialogue system for introductory computer programming. (Funding: DRL-10007962)</tagline>
+	<description>
+	&lt;p&gt;&lt;h4&gt;Introduction&lt;/h4&gt;
+
+&lt;p&gt;
+Decades of research suggest that students learn more effectively through one-on-one human tutoring than through any other known method of instruction. Intelligent tutoring research aims to create intelligent systems that equal or surpass the effectiveness of human tutors, and a particularly promising approach involves natural language tutoring systems which engage students in rich dialogue. While great strides have been made, today's natural language tutoring systems do not approach the strategic robustness and flexibility of human tutors. Many exciting challenges remain within tutorial dialogue systems research. These challenges deal with understanding student natural language input, recognizing student goals and plans, and generating good system dialogue moves, all while balancing the cognitive and emotional considerations involved in student learning. 
+
+&lt;p&gt;
+A particularly rich application area for tutorial dialogue research is introductory computing, because in the U.S. alone, a significant shortfall of computing professionals is projected in coming years. Increasing the number of students who obtain degrees in computing is considered of vital importance. At the postsecondary level, the computing pipeline begins with the introductory computing course.
+
+&lt;p&gt;&lt;h4&gt;Project Description&lt;/h4&gt;
+&lt;p&gt; 
+The JavaTutor project (NSF&#59; DRL-1007962) aims to create a natural language dialogue system for introductory computer programming. This project, conducted in collaboration with the &lt;a href="http://www.intellimedia.ncsu.edu/javatutor.html"&gt;IntelliMedia&lt;/a&gt; group, is based on the notion that dialogue systems can learn robust, flexible dialogue strategies by observing humans. A key goal is to explore the ways in which cognitive and emotional dialogue strategies contribute to student learning and motivation.  &lt;br /&gt;&lt;br /&gt;
+&lt;img src=http://people.engr.ncsu.edu/keboyer/project_images/javatutor_projectflowchart.png width=705 &gt;
+&lt;br /&gt;
+
+&lt;p&gt;&lt;h4&gt;Multimodal Data Collection&lt;/h4&gt;
+
+&lt;p&gt;
+The JavaTutor project will collect, annotate, and model a groundbreaking corpus of tutorial dialogue and its associated effectiveness measures with respect to cognitive, emotional, and motivational outcomes. The multimodal data collection includes dialogue, problem-solving actions, and student emotional data from various sources including facial video, Kinect body position sensing, and galvanic skin response readings. 
+&lt;br /&gt; &lt;br /&gt;
+ &lt;img src=http://people.engr.ncsu.edu/keboyer/project_images/javatutor_setup.png width=702 &gt;
+
+&lt;p&gt;&lt;h4&gt;The JavaTutor Intelligent System&lt;/h4&gt;
+
+&lt;p&gt;
+Models will be learned from the multimodal tutorial dialogue corpus using leading-edge machine learning approaches. These models will directly define the behavior of the intelligent tutoring system. Several versions of this system will be deployed to assess the impact of cognitive and emotional support for student learning. This project is posed to make contributions to the field of intelligent systems and natural language dialogue systems, and to areas of cognitive science and education. 
+
+&lt;br /&gt; &lt;br /&gt;
+ &lt;img src=http://people.engr.ncsu.edu/keboyer/project_images/javatutor_screenshot.png width=702  &gt;
+	</description>
+</xml>

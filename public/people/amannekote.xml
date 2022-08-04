@@ -1,0 +1,34 @@
+<xml>
+    <names>
+        <name>Amogh Mannekote</name>
+    </names>
+	<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+    <sort_name>Mannekote</sort_name>
+    <position>Ph.D. Student</position>
+    <program>Computer Science</program>
+	<school>University of Florida</school>
+	<email>amogh.mannekote@ufl.edu</email>
+	
+	<bio>Amogh is a PhD student in Computer Science advised by Dr. Kristy Boyer. His primary research interest is in applying ML and NLP techniques to improve human-computer collaboration. Since graduating with a Bachelor's in Computer Science, he has worked at multiple AI startups as well as a research laboratory that specialized in robotics. He is currently part of the CUE project. </bio>
+
+    <degrees>
+        <degree>
+            <abbrev>Ph.D.</abbrev>
+            <subject>Computer Science</subject>
+            <graduation>Expected 2026</graduation>
+            <school>University of Florida</school>
+			<details>
+			</details>
+        </degree>
+
+		<degree>
+            <abbrev>Bachelor's Degree</abbrev>
+            <subject>Computer Science</subject>
+            <graduation>2018</graduation>
+            <school>Ramaiah Institute of Technology</school>
+            <details>
+            </details>
+        </degree>
+    </degrees>
+
+</xml>

@@ -1,0 +1,42 @@
+#project_list img {
+	float:left;
+	width: 48%;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	margin-right: 0.75em;
+	box-shadow: 0px 0px 6px #888888;
+}
+
+.thumb_txt {
+	float:left;
+	width: 48%;
+	padding-top: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+}
+
+span {
+	color: #777;
+}
+
+h3 {
+	color: #000;
+}
+
+a:hover span, a:hover h3 {
+	color: #0f7fd4;
+}
+
+#project_list a:hover img{
+	box-shadow: 0px 0px 6px #0f7fd4;	
+}
+
+#project_list li {
+	float: left;
+	padding-bottom: 1em;
+	width: 100%;
+}
+
+#content {
+	text-align: left;
+}

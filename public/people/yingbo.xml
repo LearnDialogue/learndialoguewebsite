@@ -1,0 +1,34 @@
+<xml>
+<names>
+<name>Yingbo Ma</name>
+</names>
+<sort_name>Ma</sort_name>
+
+<position>Ph.D. Student</position>
+<program>Computer Science</program>
+<school>University of Florida</school>
+<email>yingbo.ma@ufl.edu</email>
+<bio>
+Yingbo is a Ph.D. student in Computer Science advised by Dr. Kristy Boyer. Before coming to the University of Florida, he graduated from the Northwestern Polytechnical University in Xi'an, China, where he obtained his master's degree in signal processing. Previously, he mainly researched the audio signal enhancement and nonlinear active noise control using different adaptive filtering algorithms. Currently, he is part of the FLECKS project.
+</bio>
+<degrees>
+<degree>
+<abbrev>Ph.D.</abbrev>
+<subject>Computer Science</subject>
+<graduation>Expected 2024</graduation>
+<school>University of Florida</school>
+</degree>
+<degree>
+<abbrev>M.E.</abbrev>
+<subject>Signal and Information Processing</subject>
+<graduation>2019</graduation>
+<school>Northwestern Polytechnical University (Xi'an, China)</school>
+</degree>
+<degree>
+<abbrev>B.E.</abbrev>
+<subject>Electrical Engineering</subject>
+<graduation>2016</graduation>
+<school>Northwestern Polytechnical University (Xi'an, China)</school>
+</degree>
+</degrees>
+</xml>

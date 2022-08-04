@@ -1,0 +1,43 @@
+<xml>
+	<name>The Dialogue HMM Project</name>
+	<sort_id>6</sort_id>
+	<tagline>Building computational models of the structure of human dialogue.</tagline>
+	<description>
+&lt;p&gt;&lt;h4&gt;Introduction&lt;/h4&gt;
+Human dialogue is the realization of complex cognitive, emotional, and social phenomena. If we can model this dialogue well, we can not only learn fundamental truths about how humans communicate with each other and learn through dialogue, we can also build intelligent systems capable of interacting in rich natural language. However, building computational models of dialogue is a challenging problem. The rich phenomena that characterize the dialogue process introduce significant uncertainty in many forms, so extracting “rules” that hold in every circumstance is not possible. To cope with this uncertainty, we utilize statistical models, which use probabilities to express relationships.
+
+&lt;p&gt;&lt;h4&gt;Hidden Markov Models&lt;/h4&gt;
+
+&lt;p&gt;All statistical models attempt to capture the relationships within some set of observations. In dialogue, we can &lt;i&gt;observe&lt;/i&gt; many things, for example, the actual words that were used, the tone of voice, or facial expressions and gestures. We can visualize dialogue as a linear sequence of these observations.
+
+&lt;p&gt;
+&lt;img src=http://people.engr.ncsu.edu/keboyer/project_images/HMM_observations1.png width=450&gt;
+
+&lt;p&gt;
+However, there are some aspects of dialogue that generally cannot be directly observed. For example, the two dialogue participants may have goals that are never explicitly stated. Representing this unobservable structure within a statistical model can lead to a better model fit. This is the motivation behind utilizing hidden Markov models (HMMs), which allow for both a &lt;i&gt;hidden&lt;/i&gt; and an &lt;i&gt;observable&lt;/i&gt; layer of probabilistic structure. These models can also be visualized in a time-slice view; at each time step, there is a hidden state and a corresponding observation that we say was &lt;i&gt;emitted&lt;/i&gt; by the hidden state.
+
+&lt;p&gt;
+&lt;img src=http://people.engr.ncsu.edu/keboyer/project_images/HMM_observations.png width=452&gt;
+
+&lt;br /&gt;
+
+&lt;p&gt;&lt;h4&gt;Learning the Structure of Dialogue&lt;/h4&gt; 
+Each hidden state is characterized by a probability distribution over the observations it could emit. Therefore, we can visualize an HMM as a set of hidden states with their associated emission probabilities. When we learn HMMs of annotated dialogue, we can discover ways in which the hidden state structure is associated with outcomes of interest, such as student knowledge gain.
+
+&lt;img src=http://people.engr.ncsu.edu/keboyer/project_images/learnedHMM1.png width=700&gt; 
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;img src=http://people.engr.ncsu.edu/keboyer/project_images/learnedHMM2.png width=700&gt;      
+     
+&lt;p&gt;&lt;h4&gt;Future Work&lt;/h4&gt; 
+
+&lt;p&gt;Numerous findings from the Dialogue HMM project have demonstrated that these models hold great promise for modeling human dialogue (see related publications below for details). Particularly rich areas for future work include the following: 
+&lt;ul&gt;
+&lt;li&gt; Adapting unsupervised machine learning techniques to dialogue modeling
+&lt;li&gt; Devising new techniques for learning HMMs that are highly predictive of human dialogue structure
+&lt;li&gt; HMM-based approaches to real-time dialogue management
+&lt;li&gt; ...and many others.
+&lt;/ul&gt;
+
+	</description>
+</xml>

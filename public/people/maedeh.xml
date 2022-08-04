@@ -1,0 +1,46 @@
+<xml>
+        <names>
+                <name>Maedeh Agharazidermani</name>
+<name>Maedeh Agharazi</name>
+
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Agharazi</sort_name>
+        <position>Postdoctoral associate</position>
+        <program>Computer Science</program>
+	<school>University of Florida</school>
+	<email>magharazidermani@ufl.edu</email>
+<bio>As a postdoc, Maedeh is a part of a team working with Dr. Boyer in learning how collaborative physical activity (PA) works and how individuals share their PA data.</bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>Ph.D.</abbrev>
+                        <subject>Information</subject>
+                        <graduation>2021</graduation>
+                        <school>Florida State University</school>
+			</degree>
+                  
+			<degree>
+                        <abbrev>M.S.</abbrev>
+                        <subject>Sociocultural International Development Educational Studies</subject>
+                        <graduation>2017</graduation>
+                        <school>Florida State University</school>
+			</degree>
+                  
+			<degree>
+                        <abbrev>M.A.</abbrev>
+                        <subject>Master of Multimedia (E-learning Technologies)</subject>
+                        <graduation>2011</graduation>
+                        <school>Multimedia University</school>
+			</degree>
+            
+			<degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Information System Engineering</subject>
+                        <graduation>2007</graduation>
+                        <school>Multimedia University</school>	
+			</degree>
+
+    </degrees>
+
+</xml>

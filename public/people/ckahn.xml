@@ -1,0 +1,31 @@
+<xml>
+        <names>
+                <name>Christina Kahn</name>
+<name>Christina S. Kahn</name>
+<name>Christina Suzanne Kahn</name>
+<name>Ms. Christina Kahn</name>
+<name>Ms. Kahn</name>
+<name>Christina K.</name>
+
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Kahn</sort_name>
+        <position>B.S. Student</position>
+        <program>Digital Arts and Sciences</program>
+	<school>University of Florida</school>
+	<email>christinakahn@ufl.edu</email>
+<bio>Christina is a second year Digital Arts and Sciences student, mentored by Ph.D. student, Kimberly Ying, and Ph.D. candidate, Fernando Rodríguez. She is currently a part of the CS-CLIMATE project, that works to develop methods of collaboration to help support introductory computer science students.</bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Digital Arts and Sciences</subject>
+                        <graduation>Expected 2023</graduation>
+                        <school>University of Florida</school>
+			<details>
+			</details>
+        	</degree>
+
+    </degrees>
+
+</xml>

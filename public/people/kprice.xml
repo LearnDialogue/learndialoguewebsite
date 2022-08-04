@@ -1,0 +1,39 @@
+<xml>
+        <names>
+                <name>Kimberly Michelle Ying</name>
+                <name>Kimberly Price</name>
+                <name>Kimberly M. Price</name>
+                <name>Kimberly M. Ying</name>
+                <name>Kimberly Michelle Price</name>
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Price</sort_name>
+        <position>Ph.D. Candidate</position>
+        <program>Human-Centered Computing</program>
+	<school>University of Florida</school>
+	<email>kimying@ufl.edu</email>
+        <bio>Kimberly Ying is a Ph.D. candidate advised by Dr. Kristy Boyer in the Department of Computer &amp; Information Science &amp; Engineering. Her research interests include computer science education and collaborative learning with an emphasis on supporting diverse students. She hopes her research efforts will have a positive impact on the computer science community, specifically on closing the gender gap.</bio>
+        <degrees>
+                <degree>
+                        <abbrev>Ph.D.</abbrev>
+                        <subject>Human-Centered Computing</subject>
+                        <graduation>Expected 2021</graduation>
+                        <school>University of Florida</school>
+                </degree>
+                <degree>
+                        <abbrev>M.S.</abbrev>
+                        <subject>Computer Science</subject>
+                        <graduation>2019</graduation>
+                        <school>University of Florida</school>
+                </degree>
+                <degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Agricultural &amp; Biological Engineering</subject>
+                        <graduation>2014</graduation>
+                        <school>University of Florida</school>
+                        <details>
+                                <detail>Cum Laude</detail>
+                        </details>
+                </degree>
+        </degrees>
+</xml>

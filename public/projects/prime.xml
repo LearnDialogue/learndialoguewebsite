@@ -1,0 +1,14 @@
+<xml>
+	<name>PRIME</name>
+	<sort_id>5</sort_id>
+	<tagline>Engaging STEM undergraduate students in computer science with intelligent tutoring systems. (Funding: National Science Foundation, DUE-1626235, DUE-1625908)</tagline>
+	<description>
+	&lt;p&gt;&lt;h4&gt;Introduction&lt;/h4&gt;
+	&lt;p&gt;Computing is vital for all STEM undergraduates. However, courses that introduce computing to non-computer science majors pose significant challenges to students, who exhibit a wide range of initial capabilities and attitudes toward computing and often face a fundamentally new way of problem solving. The PRIME project has the overarching objective of transforming introductory computing for STEM majors by creating an intelligent tutoring system that provides individualized problem-solving and motivational support. Effectively introducing computing to STEM students holds enormous potential for shaping the way students develop the computational problem solving abilities that will be critical throughout their careers. This project is led by PI James Lester, co-PI Bradford Mott, and co-PI Eric Wiebe at North Carolina State University, and by co-PI Kristy Boyer at the University of Florida.&lt;p&gt;
+	
+	&lt;p&gt;&lt;h4&gt;Project Description&lt;/h4&gt;
+	&lt;p&gt;The overarching objective of the PRIME project is to transform introductory computing for STEM majors by creating an intelligent tutoring system that provides individualized problem-solving and motivational support. The PRIME project focuses on the design, development, and evaluation of an intelligent tutoring system for introductory computing. Leveraging advanced intelligent tutoring systems technologies, PRIME will provide integrated problem-solving and motivational support dynamically tailored to individual students over the course of their problem-solving sessions.&lt;p&gt;
+	&lt;p&gt;PRIME is being designed to address the specific needs of STEM undergraduates in introductory computing courses.These students, most of whom are not computer science majors, exhibit a wide range of initial capabilities and dispositions toward computing. Many have had limited previous experience with computing, a problem that is particularly acute for women and minorities. PRIME will address these important individual differences.&lt;p&gt;
+	&lt;p&gt;The project’s research centers on investigating the effectiveness of the PRIME learning environment for students learning about computer science, as well as its impact on computing interest and self-efficacy, particularly for underrepresented groups. PRIME is currently being piloted with students at North Carolina State University, University of Florida, and Florida Agricultural and Mechanical University. The project team is working with students and teachers to develop the learning activities as well as the problem-solving environment.&lt;p&gt;
+	</description>
+</xml>

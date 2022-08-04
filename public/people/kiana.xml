@@ -1,0 +1,27 @@
+<xml>
+        <names>
+                <name>Kiana-Alize Diaz</name>
+<name>Kiana-Alize K. Diaz</name>
+
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Diaz</sort_name>
+        <position>B.S. Student</position>
+        <program>Computer Science</program>
+	<school>University of Florida</school>
+	<email>kianaalizediaz@ufl.edu</email>
+<bio>Kiana is a third-year undergraduate student in Computer Science, mentored by Ph.D. student, Yingbo Ma. She enjoys documenting adventures through photography, exercising, and playing video games in her free time. Kiana is a part of the FLECKS project, that works to develop collaboration methods to support Computer Science education for elementary and middle school students.</bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Computer Science</subject>
+                        <graduation>Expected 2022</graduation>
+                        <school>University of Florida</school>
+			<details>
+			</details>
+        	</degree>
+
+    </degrees>
+
+</xml>

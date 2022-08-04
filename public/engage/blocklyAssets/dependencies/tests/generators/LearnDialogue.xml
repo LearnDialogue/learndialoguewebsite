@@ -1,0 +1,101 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="eFF3g:)*sBc3r,(KX*0L" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTTOM"></mutation>
+    <field name="NAME">testInput</field>
+    <field name="INLINE">EXT</field>
+    <field name="CONNECTIONS">BOTTOM</field>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="Mg.kU/#[CwoI4m!azE$E"></shadow>
+      <block type="type_boolean" id="rgWm?7ui=dcQ*EBXf,#M"></block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="/+:WL~xM~%_EA|Jhw+d@">
+        <mutation colour="#5ba55b"></mutation>
+        <field name="HUE">120</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="7t.zEMMqeMoud;_.w@|O" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">LearnDialogue</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="!hJ##wlH];x_9qEi`22k">
+        <field name="INPUTNAME">NAME</field>
+        <field name="ALIGN">RIGHT</field>
+        <statement name="FIELDS">
+          <block type="field_input" id="H}2f0X+bZwnXoF5S.d;g">
+            <field name="TEXT">getNames</field>
+            <field name="FIELDNAME">LearnDialogueNames</field>
+            <next>
+              <block type="field_dropdown" id="Q=rF6;_ly@c3jG@+All*">
+                <mutation options="5"></mutation>
+                <field name="FIELDNAME">Names</field>
+                <field name="USER0">Kristy</field>
+                <field name="CPU0">KRISTY</field>
+                <field name="USER1">Xiaoxi</field>
+                <field name="CPU1">XIAOXI</field>
+                <field name="USER2">Lydia</field>
+                <field name="CPU2">LYDIA</field>
+                <field name="USER3">Joseph</field>
+                <field name="CPU3">JOSEPH</field>
+                <field name="USER4">Fernando</field>
+                <field name="CPU4">FERNANDO</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="LBp/a%#!D,M%X:_6tbCn"></shadow>
+          <block type="type_other" id="vi5IR6]zo6p~qN!^,c_+">
+            <field name="TYPE">type</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="pwGdAt#z0kt_A0`69fOy"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="y@a6BEnA=3_Hl:~T64C]">
+        <mutation colour="#5ba58c"></mutation>
+        <field name="HUE">160</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="rEc9DhJVttG8`|;,1qpI" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">learnDialogueGetNames</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id=",h1ahHv0Qck^iS{^FpkT">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="kJji.0P6qcCT]orniJxx">
+            <field name="TEXT">getLearnDialogueMembers</field>
+            <next>
+              <block type="field_dropdown" id="Vo`ZCaCaF-P)y@Fi$M]*">
+                <mutation options="3"></mutation>
+                <field name="FIELDNAME">Names</field>
+                <field name="USER0">Kristy</field>
+                <field name="CPU0">KRISTY</field>
+                <field name="USER1">Xiaoxi</field>
+                <field name="CPU1">XIAOXI</field>
+                <field name="USER2">Lydia</field>
+                <field name="CPU2">LYDIA</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="AlB{Nldw.TlCW+?9+}:t"></shadow>
+      <block type="type_string" id="_/DmvN]d!:yjX780Jj#u"></block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="jMH6cyv4YTH?jzVrA,/Y">
+        <mutation colour="#935ba5"></mutation>
+        <field name="HUE">285</field>
+      </block>
+    </value>
+  </block></xml>

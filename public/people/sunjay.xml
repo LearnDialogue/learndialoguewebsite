@@ -1,0 +1,27 @@
+<xml>
+        <names>
+                <name>Sunjay Nayak Kolakeri</name>
+<name>Sunjay N. Kolakeri</name>
+
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Kolakeri</sort_name>
+        <position>Undergraduate Researcher</position>
+        <program>Computer Science</program>
+	<school>University of Florida</school>
+	<email>skolakeri@ufl.edu</email>
+<bio>Sunjay is a fourth-year undergraduate Computer Science student currently working on the Collaborative Sport project under Dr. Kristy Boyer.</bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Computer Science</subject>
+                        <graduation>2023</graduation>
+                        <school>University of Florida</school>
+			<details>
+			</details>
+        	</degree>
+
+    </degrees>
+
+</xml>

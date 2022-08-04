@@ -1,0 +1,37 @@
+<xml>
+        <names>
+                <name>Amanda E. Griffith</name>
+		<name>Amanda E Griffith</name>
+		<name>Amanda Griffith</name>
+
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Griffith</sort_name>
+        <position>Ph.D. Student</position>
+        <program>Human-Centered Computing</program>
+	<school>University of Florida</school>
+	<email>amandagriffith@ufl.edu</email>
+<bio>Amanda is a Ph.D. Student advised by Dr. Kristy Boyer in the Department of Computer &amp; Information Science &amp; Engineering.  She is working on the development of a co-creative dialogue system for the EarSketch CAI project. Her research interests include CS education, AI, and adaptive learning. She hopes that her research will positively impact the computer science community by increasing engagement and participation from underrepresented groups.</bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>Ph.D.</abbrev>
+                        <subject>Human-Centered Computing</subject>
+                        <graduation>Expected 2025</graduation>
+                        <school>University of Florida</school>
+			<details>
+			</details>
+        	</degree>
+
+		<degree>
+                        <abbrev>B.S.B.A.</abbrev>
+                        <subject>Information Systems</subject>
+                        <graduation>2017</graduation>
+                        <school>University of Arkansas</school>
+                        <details>
+                        </details>
+                </degree>
+
+    </degrees>
+
+</xml>

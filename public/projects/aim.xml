@@ -1,0 +1,11 @@
+<xml>
+	<name>AIM</name>
+	<sort_id>7</sort_id>
+	<tagline>Adapting to affect in multimodal dialogue-rich interaction with middle school students. (Funding: IIS-1409639)</tagline>
+	<description>
+	&lt;p&gt;&lt;h4&gt;Introduction&lt;/h4&gt;
+	&lt;p&gt;Affective adaptation holds great promise for promoting productive affective states that improve the learning experience. With a decade of research on affective computing that has yielded foundational results on affect and learning, we are now well positioned to address a central question in the field: How can we design learning environments that adaptively respond to students’ affect to create the most effective, engaging learning experiences while simultaneously promoting improved attitudes toward learning? Answering this question will significantly advance the field, contribute directly to improved learning experiences for all students, and introduce the opportunity to achieve transformative improvements for underserved students, who stand to see particular benefit from these adaptive technologies.&lt;p&gt;
+	&lt;p&gt;&lt;h4&gt;Project Description&lt;/h4&gt;
+	&lt;p&gt;The project has three major thrusts: 1) capture rich multimodal data of students’ affective experiences while interacting with a fully instrumented learning environment with spoken dialogue; 2) design, develop, and iteratively refine an affect understanding model that integrates students’ natural language, nonverbal behavior, physiological response, and task action phenomena; and 3) design, develop, and iteratively refine an integrated affect and dialogue management model that adaptively responds to students’ affective states in the course of their learning interactions. To achieve these goals, the project will undertake iterative refinement and evaluation that begins with fully instrumented laboratory studies and culminates in month-long classroom studies at middle schools.&lt;p&gt;
+	</description>
+</xml>

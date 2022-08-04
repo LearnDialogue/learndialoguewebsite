@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blockly Demo: Graph</title>
+  <script src="https://www.google.com/jsapi"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="storage.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+  <script src="blocklyAssets/dependencies/acorn_interpreter.js"></script>
+  <script src="blocklyAssets/dependencies/blockly_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/blocks_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/javascript_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/python_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/php_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/lua_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/dart_compressed.js"></script>
+  <script src="code.js"></script>
+  <style>
+
+    h1 {
+      font-weight: normal;
+      font-size: 140%;
+    }
+    #funcText {
+      margin-top: 1em;
+      margin-left: 1.5em;
+      font-family: sans-serif;
+    }
+    #funcText>img {
+      height: 3px;
+      width: 15px;
+      vertical-align: middle;
+      margin-right: .5em;
+    }
+    #y1 {
+      background-color: #64ede9;
+    }
+  </style>
+</head>
+<body>
+
+  <table width="100%" height="90%">
+    <tr>
+      <td>
+        <img id="bg_image" alt="" title="" src="Engage_Header2.png">
+        <h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
+          <a href="../index.html">Demos</a> &gt; Graph</h1>
+          <span id="title">...</span>
+        </h1>
+        <p>&rarr; More info on live chart-generator: <a href="https://developers.google.com/blockly/guides/configure/web/code-generators#generating_code">Realtime generation</a>&hellip;</p>
+        <p>
+          <button onclick="Code.parseCode()">Parse JavaScript</button>
+          <button onclick="Code.stepCode()" id="stepButton" disabled="disabled">Step JavaScript</button>
+        </p>
+      </td>
+      <td class="farSide">
+        <select id="languageMenu"></select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan=2>
+        <table width="100%">
+          <tr id="tabRow" height="1em">
+            <td id="tab_blocks" class="tabon">...</td>
+
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_javascript" class="taboff">JavaScript</td>
+
+            <!--
+
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_python" class="taboff">Python</td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_php" class="taboff">PHP</td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_lua" class="taboff">Lua</td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_dart" class="taboff">Dart</td>
+            <td class="tabmin">&nbsp;</td>
+            <td id="tab_xml" class="taboff">XML</td>
+          -->
+            <td class="tabmax">
+              <button id="trashButton" class="notext" title="...">
+                <img src='blocklyAssets/dependencies/media/1x1.gif' class="trash icon21">
+              </button>
+              <button id="linkButton" class="notext" title="...">
+                <img src='blocklyAssets/dependencies/media/1x1.gif' class="link icon21">
+              </button>
+              <button id="runButton" class="notext primary" title="...">
+                <img src='blocklyAssets/dependencies/media/1x1.gif' class="run icon21">
+              </button>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td width = "60%" height="80%" id="content_area">
+      </td>
+
+      <td width = "40%" height="80%" id="visualization">
+      </td>
+
+    </tr>
+  </table>
+  <div id="content_blocks" class="content"></div>
+  <pre id="content_javascript" class="content"></pre>
+  <pre id="content_python" class="content"></pre>
+
+  <!--
+    <div id="funcText">
+      <img id="y1" src="blocklyAssets/dependencies/media/1x1.gif">
+      ...
+    </div>
+  --> 
+
+  <xml id="toolbox" style="display: none">
+    <category name="Logic" colour="210">
+      <block type="controls_if"></block>
+      <block type="logic_compare"></block>
+      <block type="logic_operation"></block>
+      <block type="logic_negate"></block>
+      <block type="logic_boolean"></block>
+      <block type="logic_null"></block>
+      <block type="logic_ternary"></block>
+    </category>
+    <category name="Loops" colour="120">
+      <block type="controls_repeat_ext">
+        <value name="TIMES">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="controls_whileUntil"></block>
+      <block type="controls_for">
+        <value name="FROM">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="controls_forEach"></block>
+      <block type="controls_flow_statements"></block>
+    </category>
+    <category name="Math" colour="230">
+      <block type="math_number"></block>
+      <block type="math_arithmetic">
+        <field name="OP">POWER</field>
+        <value name="A">
+          <block type="graph_get_x"></block>
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="B">
+          <block type="math_number">
+            <field name="NUM">2</field>
+          </block>
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_single">
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">9</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_trig">
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">45</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_constant"></block>
+      <block type="math_number_property">
+        <value name="NUMBER_TO_CHECK">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_round">
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">3.1</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_modulo">
+        <value name="DIVIDEND">
+          <shadow type="math_number">
+            <field name="NUM">64</field>
+          </shadow>
+        </value>
+        <value name="DIVISOR">
+          <shadow type="math_number">
+            <field name="NUM">10</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_constrain">
+        <value name="VALUE">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+        <value name="LOW">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="HIGH">
+          <shadow type="math_number">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_random_int">
+        <value name="FROM">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="math_random_float"></block>
+      <block type="graph_get_x"></block>
+      <block type = "graph_set_BatPopulation"></block>
+      <block type = "graph_set_MosPopulation"></block>
+
+    </category>
+    <category name="Text" colour="160">
+      <block type="text"></block>
+      <block type="text_join"></block>
+      <block type="text_append">
+        <value name="TEXT">
+          <shadow type="text"></shadow>
+        </value>
+      </block>
+      <block type="text_length">
+        <value name="VALUE">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_isEmpty">
+        <value name="VALUE">
+          <shadow type="text">
+            <field name="TEXT"></field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_indexOf">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">{textVariable}</field>
+          </block>
+        </value>
+        <value name="FIND">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_charAt">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">{textVariable}</field>
+          </block>
+        </value>
+      </block>
+      <block type="text_getSubstring">
+        <value name="STRING">
+          <block type="variables_get">
+            <field name="VAR">{textVariable}</field>
+          </block>
+        </value>
+      </block>
+      <block type="text_changeCase">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_trim">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_print">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="text_prompt_ext">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+    </category>
+    <category name="Lists" colour="260">
+      <block type="lists_create_with">
+        <mutation items="0"></mutation>
+      </block>
+      <block type="lists_create_with"></block>
+      <block type="lists_repeat">
+        <value name="NUM">
+          <shadow type="math_number">
+            <field name="NUM">5</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="lists_length"></block>
+      <block type="lists_isEmpty"></block>
+      <block type="lists_indexOf">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">{listVariable}</field>
+          </block>
+        </value>
+      </block>
+      <block type="lists_getIndex">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">{listVariable}</field>
+          </block>
+        </value>
+      </block>
+      <block type="lists_setIndex">
+        <value name="LIST">
+          <block type="variables_get">
+            <field name="VAR">{listVariable}</field>
+          </block>
+        </value>
+      </block>
+      <block type="lists_getSublist">
+        <value name="LIST">
+          <block type="variables_get">
+            <field name="VAR">{listVariable}</field>
+          </block>
+        </value>
+      </block>
+      <block type="lists_split">
+        <value name="DELIM">
+          <shadow type="text">
+            <field name="TEXT">,</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="lists_sort"></block>
+    </category>
+    <category name="Colour" colour="20">
+      <block type="colour_picker"></block>
+      <block type="colour_random"></block>
+      <block type="colour_rgb">
+        <value name="RED">
+          <shadow type="math_number">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+        <value name="GREEN">
+          <shadow type="math_number">
+            <field name="NUM">50</field>
+          </shadow>
+        </value>
+        <value name="BLUE">
+          <shadow type="math_number">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+      </block>
+      <block type="colour_blend">
+        <value name="COLOUR1">
+          <shadow type="colour_picker">
+            <field name="COLOUR">#ff0000</field>
+          </shadow>
+        </value>
+        <value name="COLOUR2">
+          <shadow type="colour_picker">
+            <field name="COLOUR">#3333ff</field>
+          </shadow>
+        </value>
+        <value name="RATIO">
+          <shadow type="math_number">
+            <field name="NUM">0.5</field>
+          </shadow>
+        </value>
+      </block>
+    </category>
+    <sep></sep>
+    <category name="Variables" colour="330" custom="VARIABLE"></category>
+    <category name="Functions" colour="290" custom="PROCEDURE"></category>
+    <sep></sep>
+    <category name="Data" colour="20">
+      <block type="weather_forecasts"></block>
+      <block type="learndialoguegetnames"></block>
+    </category>
+  </xml>
+
+  <xml id="startBlocks" style="display: none">
+      <block type="variables_set" id="T_=oN/y7IE/u534k)i]L" x="0" y="0">
+    <field name="VAR">MosquittoPopulation</field>
+    <value name="VALUE">
+      <block type="math_number" id="a^8I|]jlt=8a4+?CqYd!">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id=":QmBdKTnm/OvzftPDqU?">
+        <field name="VAR">BatPopulation</field>
+        <value name="VALUE">
+          <block type="math_number" id="6#|PIIJ0ryZqGpraujWv">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="v;)#Ujj}pY,dT6]3jN-}">
+            <field name="VAR">MosReproRate</field>
+            <value name="VALUE">
+              <block type="math_number" id="X[9;-U`=@E0#H}v+^*(U">
+                <field name="NUM">0.1</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="6_/Ypmt8Y%?BxP?XD+^_">
+                <field name="VAR">BatReproRate</field>
+                <value name="VALUE">
+                  <block type="math_number" id="9htr4Y!;#~{4_j;{K7Q;">
+                    <field name="NUM">0.06</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set" id="*sBHc,W601C@F}{c}D-)">
+                    <field name="VAR">mosMortalityRate</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="LDX,r5hAKx3rZPHv-d@E">
+                        <field name="NUM">0.03</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_set" id="mU^2yBVSOZ2;#ZNZxV%I">
+                        <field name="VAR">batMortalityRate</field>
+                        <value name="VALUE">
+                          <block type="math_number" id=")V{x/lL:WnZ~K2s;|l~t">
+                            <field name="NUM">0.2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="variables_set" id="KW_+y^vq{BRsCas.XDa5" x="0" y="180">
+    <field name="VAR">batGrowthRate</field>
+    <value name="VALUE">
+      <block type="math_arithmetic" id="z[y88Gza)XlUr,)/y=8~">
+        <field name="OP">MINUS</field>
+        <value name="A">
+          <shadow type="math_number" id="F4jl%tJ_Er.M.`#?h.PU">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_arithmetic" id="rWTveB*dyVW|q[+HBzLY">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number" id="f(!utIlcSxU0;;h9%Yu|">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="zE1Qd*FZlk*f#3~5qOhK">
+                <field name="VAR">BatReproRate</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="R%YrKXlia/1Y+IX`Z#,1">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_arithmetic" id="%{]fWsq+b?uRT*)@E-[6">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <shadow type="math_number" id="+_pRk)Qp_#H.jxBi4H_|">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="%bMulGV3Vc]xh%Om7~Ys">
+                    <field name="VAR">MosquittoPopulation</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="10)pi0I%s#:x@-]22Mf5">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="we^y]~^}sIEkD(FTcgdS">
+                    <field name="VAR">BatPopulation</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="e.Svc=yh(Ee55VSo26ZL">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_arithmetic" id="/:[50_*V6i^Q)sAi[Uy+">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number" id="*DzFS-158dNEF0U#zbzn">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="Rhnf[i5FVAhs}nj_4.kl">
+                <field name="VAR">batMortalityRate</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="Wo49muQzS8!BMyw=-,:T">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="KPFu(x_fbfz+qE6Dbp)6">
+                <field name="VAR">BatPopulation</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="~vT+k[yhJlQ?i6%{sJ:[">
+        <field name="VAR">newBatPop</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="J5WtK+JPm_^ZvE9Tj`T)">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="h`Wp]6E*)LW~AyT4k(r^">
+                <field name="VAR">BatPopulation</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="r+hlB9bbyH34C~?3qEPT">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_single" id="n4L+5i2ki27KEk9TJ?q0">
+                <field name="OP">EXP</field>
+                <value name="NUM">
+                  <shadow type="math_number" id="O%B]V9]m1QIp[XWb|^|%">
+                    <field name="NUM">9</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="OccxplggU.1FGz/(4!`c">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <shadow type="math_number" id="@z]c,XGh/nC!FTs9S!cX">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="N}s1l=yZ`7d{q,tIXl,(">
+                        <field name="VAR">batGrowthRate</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="~KpJX:TdT?#UJ;?sTaE5">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="graph_get_x" id="?bwaIV,Z8Bb=W;a#GX#{"></block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="w8p?zm-SO^J|9{g-;omL">
+            <field name="VAR">BatPopulation</field>
+            <value name="VALUE">
+              <block type="variables_get" id="~W1hl7S:!%YSJ=y4!uIx">
+                <field name="VAR">newBatPop</field>
+              </block>
+            </value>
+            <next>
+              <block type="graph_set_BatPopulation" id="A:8E(e~wgC(K,uknErGv">
+                <value name="VALUE">
+                  <block type="variables_get" id="gb}dk#~A-etBcYIb=6g^">
+                    <field name="VAR">BatPopulation</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="variables_set" id="{#2M`4[2NXVbj6CN:~k%" x="-13" y="387">
+    <field name="VAR">mosquitoGrowthRate</field>
+    <value name="VALUE">
+      <block type="math_arithmetic" id="2_=8@q+V*yz:_e@}dJJp">
+        <field name="OP">MINUS</field>
+        <value name="A">
+          <shadow type="math_number" id="F4jl%tJ_Er.M.`#?h.PU">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_arithmetic" id="l,@M93XQ:hr}uYmH~},[">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number" id="f(!utIlcSxU0;;h9%Yu|">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="`_|j6v3t%d)87CUk04)Q">
+                <field name="VAR">MosReproRate</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="R%YrKXlia/1Y+IX`Z#,1">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="E{Xdq{tb#@|;Grvxc[uQ">
+                <field name="VAR">MosquittoPopulation</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="e.Svc=yh(Ee55VSo26ZL">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="math_arithmetic" id="}^liCuUaCc`F9O?cyyQ(">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number" id="*DzFS-158dNEF0U#zbzn">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="OT,~h3)3p;Mg+S,%=x5B">
+                <field name="VAR">mosMortalityRate</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="Wo49muQzS8!BMyw=-,:T">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_arithmetic" id="9SvH2Lv8g5Vk47,P-Wwf">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <shadow type="math_number" id="f,MF`FWpwQYA3%/E~QkH">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="8?aM..7d.lnQsL`mV4Kv">
+                    <field name="VAR">MosquittoPopulation</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <shadow type="math_number" id="po7i9Pifd2g)A=Ap?o[s">
+                    <field name="NUM">1</field>
+                  </shadow>
+                  <block type="variables_get" id="DvOzXPN*b|{x0,RPy700">
+                    <field name="VAR">BatPopulation</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="PJ.GsR^482au)ux;bDY5">
+        <field name="VAR">newMosPop</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="rCq8^VTcr;hH/UL*HiV[">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number" id="@:%XEe0@}T,lr+;SJ--z">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="5PNMeH-t.LmX:ki?03]w">
+                <field name="VAR">MosquittoPopulation</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="r+hlB9bbyH34C~?3qEPT">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="math_single" id="[C!z;?Sc(34Nu4eJKxj,">
+                <field name="OP">EXP</field>
+                <value name="NUM">
+                  <shadow type="math_number" id="O%B]V9]m1QIp[XWb|^|%">
+                    <field name="NUM">9</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="x.xJiH06Y{@L,PydC]4.">
+                    <field name="OP">MULTIPLY</field>
+                    <value name="A">
+                      <shadow type="math_number" id="@z]c,XGh/nC!FTs9S!cX">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="variables_get" id="h*TkqPCOUV=]pQ7BeIP2">
+                        <field name="VAR">mosquitoGrowthRate</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="OJw`-Z[8p1:P]PvCVADD">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="graph_get_x" id="!p8RgL@@P{l2}yifXU`o"></block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="Pt/|GI-:?)]aYD}sJ54/">
+            <field name="VAR">MosquittoPopulation</field>
+            <value name="VALUE">
+              <block type="variables_get" id="(Irv9*u4t^ciND_q):l}">
+                <field name="VAR">newMosPop</field>
+              </block>
+            </value>
+            <next>
+              <block type="graph_set_MosPopulation" id="H472f;aJP@8/bqhN#a`D">
+                <value name="VALUE">
+                  <block type="variables_get" id="9UN7|CRzCd(1{:Uz(]^=">
+                    <field name="VAR">MosquittoPopulation</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="math_arithmetic" id="!{yPHhaS1%.Vp9u|7XN}" x="-13" y="713">
+    <field name="OP">ADD</field>
+    <value name="A">
+      <shadow type="math_number" id="p[zS}`,HnW%k)8EXsL{S">
+        <field name="NUM">1</field>
+      </shadow>
+      <block type="variables_get" id="Z|P.N/3YtU(ftM`(%7r`">
+        <field name="VAR">BatPopulation</field>
+      </block>
+    </value>
+    <value name="B">
+      <shadow type="math_number" id="?LP2u,@+WZKheUL3tn[k">
+        <field name="NUM">1</field>
+      </shadow>
+      <block type="math_arithmetic" id="p%#MA8B{wUfm5aMMTvGW">
+        <field name="OP">MULTIPLY</field>
+        <value name="A">
+          <shadow type="math_number" id="1i1uNz~uS5U)4lFw/_8;">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id="M*4?2QO=3Y~H_+=pr6)~">
+            <field name="VAR">BatPopulation</field>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="4paz/:K^Vtz^OzI89un.">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id="o5y,xqwB%k%:XWigge6~">
+            <field name="VAR">batGrowthRate</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="math_arithmetic" id="P4TX;W+@7(ei}}bL3tgG" x="-62" y="762">
+    <field name="OP">ADD</field>
+    <value name="A">
+      <shadow type="math_number" id="p[zS}`,HnW%k)8EXsL{S">
+        <field name="NUM">1</field>
+      </shadow>
+      <block type="variables_get" id="cur=?L?u8QQZo)TKn,cP">
+        <field name="VAR">MosquittoPopulation</field>
+      </block>
+    </value>
+    <value name="B">
+      <shadow type="math_number" id="?LP2u,@+WZKheUL3tn[k">
+        <field name="NUM">1</field>
+      </shadow>
+      <block type="math_arithmetic" id="{UW):]ZT1[ANAb/p!O_s">
+        <field name="OP">MULTIPLY</field>
+        <value name="A">
+          <shadow type="math_number" id="1i1uNz~uS5U)4lFw/_8;">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id="-|bsd_KGdN!D1D,ZRtXf">
+            <field name="VAR">MosquittoPopulation</field>
+          </block>
+        </value>
+        <value name="B">
+          <shadow type="math_number" id="4paz/:K^Vtz^OzI89un.">
+            <field name="NUM">1</field>
+          </shadow>
+          <block type="variables_get" id="F5(xMKlYR9fYrk%.m})t">
+            <field name="VAR">mosquitoGrowthRate</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  </xml>
+<!--
+  <xml id="startBlocks" style="display: none">
+    <block type="graph_set_BatPopulation" deletable="true" x="100" y="100">
+      <value name="VALUE">
+        <block type="math_arithmetic">
+          <field name="OP">POWER</field>
+          <value name="A">
+            <block type="graph_get_x"></block>
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="B">
+            <block type="math_number">
+              <field name="NUM">2</field>
+            </block>
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+    </block>
+  </xml>
+-->
+
+<CENTER><button type="button"><a href="./index.html">Switch to Code Panel</a></button></CENTER>
+
+  <script>
+// Load the Google Chart Tools Visualization API and the chart package.
+if (typeof google == 'object') {
+  google.load('visualization', '1', {packages: ['corechart']});
+} else {
+  alert('Unable to load Google\'s chart API.\n' +
+        'Are you connected to the Internet?');
+}
+
+// Define the custom blocks and their JS generators.
+Blockly.Blocks['graph_get_x'] = {
+  // x variable getter.
+  init: function() {
+    this.jsonInit({
+      "message0": "time",
+      "output": "Number",
+      "colour": Blockly.Blocks.variables.HUE,
+      "tooltip": Blockly.Msg.VARIABLES_GET_TOOLTIP,
+      "helpUrl": Blockly.Msg.VARIABLES_GET_HELPURL
+    });
+  }
+};
+
+Blockly.JavaScript['graph_get_x'] = function(block) {
+  // x variable getter.
+  return ['time', Blockly.JavaScript.ORDER_ATOMIC];
+};
+
+Blockly.Blocks['graph_set_BatPopulation'] = {
+  // y variable setter.
+  init: function() {
+    this.jsonInit({
+      "message0": "BatGraph= %1",
+      "previousStatement": null,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE",
+          "check": "Number"
+        }
+      ],
+      "colour": Blockly.Blocks.variables.HUE,
+      "tooltip": Blockly.Msg.VARIABLES_SET_TOOLTIP,
+      "helpUrl": Blockly.Msg.VARIABLES_SET_HELPURL
+    });
+  }
+};
+
+Blockly.JavaScript['graph_set_BatPopulation'] = function(block) {
+  // y variable setter.
+  var argument0 = Blockly.JavaScript.valueToCode(block, 'VALUE',
+      Blockly.JavaScript.ORDER_ASSIGNMENT) || '';
+
+  console.log("Argument0: " + argument0); 
+  return 'Bat = ' + argument0 + ';';
+};
+
+Blockly.Blocks['graph_set_MosPopulation'] = {
+  // y variable setter.
+  init: function() {
+    this.jsonInit({
+      "message0": "MosquitoGraph= %1",
+      "previousStatement": null,
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE",
+          "check": "Number"
+        }
+      ],
+      "colour": Blockly.Blocks.variables.HUE,
+      "tooltip": Blockly.Msg.VARIABLES_SET_TOOLTIP,
+      "helpUrl": Blockly.Msg.VARIABLES_SET_HELPURL
+    });
+  }
+};
+
+Blockly.JavaScript['graph_set_MosPopulation'] = function(block) {
+  // y variable setter.
+  var argument0 = Blockly.JavaScript.valueToCode(block, 'VALUE',
+      Blockly.JavaScript.ORDER_ASSIGNMENT) || '';
+
+  console.log("Argument0: " + argument0); 
+  return 'Mosquito = ' + argument0 + ';';
+};
+
+</script>
+
+</body>
+</html>

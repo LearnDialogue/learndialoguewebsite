@@ -1,0 +1,44 @@
+<xml>
+        <names>
+                <name>Xiaoyi Tian</name>
+
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Tian</sort_name>
+        <position>Ph.D. Student</position>
+        <program>Human-Centered Computing</program>
+	<school>University of Florida</school>
+	<email>tianx@ufl.edu</email>
+<bio>Xiaoyi Tian is a Ph.D. student advised by Dr. Kristy Boyer. Her research interests include artificial intelligence in education, multimodal learning analytics and human-computer interaction. Through her research, Xiaoyi aims to design social and collaborative learning environments to improve student motivation and provide personalized learning experiences. In the LearnDialogue group, she is part of the Camp DIALOGS project and is working on modeling learner’s collaboration behaviors and learning performances using multimodal data streams (facial expression, speech, etc). &lt;p&gt; Personal Website: &lt;a href="https://txiaoyi.com/"&gt;https://txiaoyi.com/ &lt;/a&gt; </bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>Ph.D.</abbrev>
+                        <subject>Human-Centered Computing</subject>
+                        <graduation>Expected 2025</graduation>
+                        <school>University of Florida</school>
+			<details>
+			</details>
+        	</degree>
+
+		<degree>
+                        <abbrev>M.S.</abbrev>
+                        <subject>Information Science</subject>
+                        <graduation>2020</graduation>
+                        <school>University of Pittsburgh</school>
+                        <details>
+                        </details>
+                </degree>
+
+                <degree>
+                                    <abbrev>B.Mgmt.</abbrev>
+                                    <subject>Management Science</subject>
+                                    <graduation>2018</graduation>
+                                    <school>Anhui University, China</school>
+                                    <details>
+                                    </details>
+                            </degree>
+
+    </degrees>
+
+</xml>

@@ -1,0 +1,37 @@
+<xml>
+        <names>
+                <name>Fernando J. Rodríguez</name>
+                <name>Fernando J. Rodriguez</name>
+                <name>Fernando Rodríguez</name>
+                <name>Fernando Rodriguez</name>
+        </names>
+        <sort_name>Rodríguez</sort_name>
+        <position>Ph.D. Candidate</position>
+        <program>Human-Centered Computing</program>
+	<school>University of Florida</school>
+	<email>fjrodriguez@ufl.edu</email>
+        <bio>&lt;p&gt;Fernando Rodríguez is a Ph.D. candidate in Human-Centered Computing advised by Dr. Kristy Elizabeth Boyer. His research interests include computer science education and collaborative learning. He was awarded a National Science Foundation Graduate Research Fellowship for his research on how undergraduate students with little prior programming experience use pair programming to complete problem-solving activities and how we can best support these students during this collaboration.  Currently, Fernando is part of the CS-CLIMATE project, developing collaboration support interventions for introductory computer science education.&lt;/p&gt;
+		
+		<!--&lt;p&gt;For the Conversational UX Design workshop held at CHI 2017, Fernando authored a position paper on how students collaborate in computer science problem solving and how to design dialogue agents that can support these students: &lt;a href='https://cise.ufl.edu/research/learndialogue/pdf/LearnDialogue-Rodriguez-CHI-ConversationalUXWorkshop-2017.pdf' &gt;Toward Conversational Agents that Support Learning: A Look at Human Collaborations in Computer Science Problem Solving&lt;/a&gt;.&lt;/p&gt;-->
+        </bio>
+        <degrees>
+                <degree>
+                        <abbrev>Ph.D.</abbrev>
+                        <subject>Human-Centered Computing</subject>
+                        <graduation>2021</graduation>
+                        <school>University of Florida</school>
+                </degree>
+                <degree>
+                        <abbrev>M.S.</abbrev>
+                        <subject>Computer Science</subject>
+                        <graduation>2015</graduation>
+                        <school>North Carolina State University</school>
+                </degree>
+                <degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Computer Engineering</subject>
+                        <graduation>2011</graduation>
+                        <school>University of Puerto Rico, Mayagüez Campus</school>
+                </degree>
+        </degrees>
+</xml>

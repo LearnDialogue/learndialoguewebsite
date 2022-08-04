@@ -1,0 +1,33 @@
+<xml>
+<names>
+<!--The first name listed here is the one that will show on your individual page-->
+<name>Omar Maslamani</name>
+<!--Additional names are just to be extra-sure that any way your name would show up on a pub, it gets linked to you-->
+<name>Omar Samer Maslamani</name>
+<name>Omar Mas</name>
+<name>Omar M </name>
+</names>
+<sort_name>Maslamani</sort_name>
+<!--Here are the recognized positions you can choose from:
+   Ph.D. Student
+	Ph.D. Candidate
+	Undergraduate Researcher
+	Postdoctoral Research Associate
+-->
+<position> B.S. Student </position>
+<program>Computer Science </program>
+<school>University of Florida</school>
+<email>omaslamani@ufl.edu</email>
+<bio>
+Omar is a third-year undergraduate Computer Science student. He is an Undergraduate Researcher mentored by Xiaoyi Tian, a Ph.D. student. Currently, he is working on the PRIME project, which aims to develop an intelligent tutoring system for novice programmers. In his free time, Omar enjoys weightlifting, cooking, watching soccer, and collecting records.
+</bio>
+<degrees>
+<degree>
+<!--Abbreviations are B.S., B.A., M.S., etc-->
+<abbrev>B.S.</abbrev>
+<subject>Computer Science</subject>
+<graduation>Expected 2023</graduation>
+<school>University of Florida</school>
+</degree>
+</degrees>
+</xml>

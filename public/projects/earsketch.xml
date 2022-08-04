@@ -1,0 +1,12 @@
+<xml>
+	<name>EarSketch CAI</name>
+	<sort_id>1</sort_id>
+	<tagline>Engaging high school students in computer science with co-creative learning companions (Funding: National Science Foundation, DRL-1813740)</tagline>
+	<description>
+	&lt;p&gt;&lt;h4&gt;Introduction&lt;/h4&gt;
+	&lt;p&gt;Computer science is becoming a ubiquitously needed skill in the 21st century, and we have seen the emergence of innovative approaches for K-12 that are rapidly gaining adoption. The EarSketch learning environment engages learners in programming by allowing them to control musical samples, beats, and effects with computer code in Python or JavaScript. The Cai (Co-creative AI) project scaffolds deep computer science learning within an environment that fosters creative expression. This project is led by PI Brian Magerko and co-PI Jason Freeman at the Georgia Institute of Technology and by PI Kristy Boyer at the University of Florida.&lt;p&gt;
+	
+	&lt;p&gt;&lt;h4&gt;Project Description&lt;/h4&gt;
+	&lt;p&gt;The Cai project leverages state-of-the-art research in co-creative artificial intelligence (AI) and intelligent pedagogical support, along with well-informed studies of human collaboration and the widely-adopted EarSketch CS learning platform. We will build the first-of-its-kind co-creative learning companion, powered by artificial intelligence. EarSketch's co-creative learning companion will not act as an authority figure, but rather as a peer. Cai will collaborate with learners to make music and code as a partner, sometimes leading by example to introduce important computer science constructs, while often supporting or deferring to the student's creative choices. We will iteratively refine Cai to be particularly effective within the context of high school computer science classrooms, in close partnership with teachers and diverse students through participatory design. We will engage a broad audience of high school learners by building on the success of EarSketch for empowering underrepresented populations in computing and creating on-demand, personalized support that scaffolds the learning process.&lt;p&gt;
+	</description>
+</xml>

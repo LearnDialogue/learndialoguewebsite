@@ -1,0 +1,27 @@
+<xml>
+        <names>
+                <name>Alexandra Lauren Dibble</name>
+<name>Alexandra L. Dibble</name>
+
+        </names>
+		<!-- The different names are to account for the different combinations in which your name could appear in publications or listings. Please account for all variations. -->
+        <sort_name>Dibble</sort_name>
+        <position>Research Associate</position>
+        <program>Computer Science Alumni</program>
+	<school>University of Florida</school>
+	<email>a.dibble@ufl.edu</email>
+<bio>Alexandra Dibble is a Research Scientist in the Department of Computer and Information Science and Engineering. Her research interests include computer science education, intelligent tutoring, and collaborative dialogue in programming environments and physical fitness.</bio>
+
+    <degrees>
+                <degree>
+                        <abbrev>B.S.</abbrev>
+                        <subject>Computer Science</subject>
+                        <graduation>2021</graduation>
+                        <school>University of Florida</school>
+			<details>
+			</details>
+        	</degree>
+
+    </degrees>
+
+</xml>

@@ -1,0 +1,170 @@
+#header {
+	width: 100%;
+	background: #F2F2F2;	
+}
+
+#menu {
+	float: left;
+	width: 327px;
+/*	box-shadow: 0 0 5px #222222;	*/
+	box-shadow: 0 0 0px #222222;	
+	margin-top: 7px;
+}
+
+#menu ul{
+	padding: 0;
+	margin: 0;
+}
+
+#menu ul li{
+	list-style: none;
+	width: 25%;
+	margin: 0;
+	float: left;
+	background: #e8e8e8;
+}
+
+#menu li:hover{
+/*	background: #0f7fd4; */
+	background: #333;
+}
+
+#menu a, #menu_right a {
+	display: block;
+	margin: 0;
+	padding: 5px 0px; 
+	color: #000;
+	text-decoration: none;
+	text-align: center;
+}
+
+#menu_right a:hover {
+	color: #0021A5;
+}
+
+#menu_right li{
+	width: 30%;
+	float: left;
+}
+
+#menu_right li.menu_wide {
+	width: 40%;
+}
+
+#menu_right {
+	float: left;
+	clear: right;
+	width: 49%;
+	width: calc(100% - 327px);
+	width: -moz-calc(100% - 327px);
+	min-width: 320px;
+	background: #e8e8e8;
+/*	box-shadow: 0 4px 4px -4px #222222, 0 -4px 4px -4px #222222, inset 4px 0 4px -4px #222222; */
+	box-shadow: inset 4px 0 4px -4px #222222;
+}
+
+
+#uf_logo {
+	float: right;
+	min-height: 35px;
+	padding-right: 7px;
+	padding-bottom: 0;
+}
+
+#uf_logo_img {
+	width: 175px;
+}
+
+#menu .menu_home:hover {
+	background: #FFF;
+}
+
+#menu_logo {
+	width: 320px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#menu ul li.menu_space {
+	width: 7px;
+	background: #e8e8e8;
+	margin-top: 30px;
+/*	box-shadow: 0 0 4px #222222; */
+}
+
+#menu ul li.menu_space:hover {
+	background: #AAA;
+}
+
+#menu ul li.menu_home {
+	background: #F2F2F2;
+	width: 320px;
+	box-shadow: 0 0 4px #222222;
+
+}
+
+#innermenu {
+	width: 100%;
+	background: #FFF;
+}
+
+#menu ul li{
+	width: 59%;
+	background: #FFF;
+}
+
+#menu ul li ul{
+	padding: 0;
+	margin: 0;
+	padding-top: 30px;
+	box-shadow: inset 4px 0 4px -4px #222222;
+}
+
+#menu ul li ul li{
+	width: 33%;
+	background: #AAA;
+}
+
+#menu ul li ul li.menu_wide{
+	width: 33%;
+}
+
+
+#menu ul li:hover {
+	background: #FFF;
+}
+
+@media (max-width: 675px){
+	#menu_right {
+		width: 100%;
+		box-shadow: none;
+	}
+		
+	#menu ul li.menu_space {
+		width:0px;
+	}
+	
+	#menu {
+		width: 100%;
+		margin-top: 0px;
+	}
+	
+	#menu ul li.menu_home {
+		width: 100%;
+	}
+	
+	#ncsu_logo {
+		min-height: 31px;
+	}
+}
+
+@media (max-width: 495px){
+	#ncsu_logo {
+		min-height: 31px;
+	}
+	
+	#menu {
+		margin-top: 0px;
+	}
+}
+

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="google" value="notranslate">
+  <title>Blockly Demo:</title>
+  <script src="https://www.google.com/jsapi"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="storage.js"></script>
+  <script src="blocklyAssets/dependencies/blockly_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/blocks_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/javascript_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/python_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/php_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/lua_compressed.js"></script>
+  <script src="blocklyAssets/dependencies/dart_compressed.js"></script>
+
+  <script src="codeNoJS.js"></script>
+
+<script src="jquery.min.js"></script>
+  <script>
+     if (!window.jQuery) {
+        document.write('<script src="./jquery.min.js"><\/script>');
+     }
+  </script>  <!-- <script type="text/javascript" src="event-logging.js"></script> -->
+  <script type="text/javascript">
+      var sessionID = "";
+      do {
+          sessionID = prompt("Ask the moderator for your ID and enter it here.", "");
+      } while (sessionID === null || sessionID.trim() === "");
+      //Initializes event logging to database
+      //if (!logEvents) {
+          //logEvents = true;
+          EventLogging.logSessionStart(sessionID);
+          console.log("Start database logging");
+          console.log("SessionID: " + sessionID);
+      //}
+		</script>
+</head>
+<body>
+  <table width="100%" height="100%">
+    <tr>
+      <td>
+        <img id="bg_image" alt="" title="" src="Engage_Header2.png">
+        <h1><a href="https://developers.google.com/blockly/">LearnDialogue</a>&rlm; &gt;
+          <a href="../index.html">Engage</a>&rlm; &gt;
+          <span id="title">...</span>
+        </h1>
+      </td>
+      <td class="farSide">
+        <select id="languageMenu"></select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan=2>
+        <table width="100%">
+          <tr id="tabRow" height="1em">
+            <td id="tab_blocks" class="tabon">...</td>  
+
+            <td class="tabmax">
+              <button id="trashButton" class="notext" title="...">
+                <img src='blocklyAssets/dependencies/media/1x1.gif' class="trash icon21">
+              </button>
+              <button id="linkButton" class="notext" title="...">
+                <img src='blocklyAssets/dependencies/media/1x1.gif' class="link icon21">
+              </button>
+              <button id="runButton" class="notext primary" title="...">
+                <img src='blocklyAssets/dependencies/media/1x1.gif' class="run icon21">
+              </button>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="80%" colspan=2 id="content_area"></td>
+    </tr>
+  </table>
+  <div id="content_blocks" class="content"></div>
+
+  <xml id="toolbox" style="display: none">
+      <block type="controls_if"></block>
+      <block type="logic_compare"></block>
+      <block type="math_number"></block>
+      <block type="math_arithmetic">
+        <value name="A">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="B">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+      
+      <block type="text"></block>
+      <block type="text_print">
+         <block type="text"></block>
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>
+
+      <block type="text_prompt_ext"></block>
+      <block type="text_join"></block>
+
+      <block type ="variables_set"></block>
+      <block type ="variables_get"></block>
+       <block type="math_change">
+        <value name="DELTA">
+          <shadow type="math_number">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+      </block>
+
+  </xml>
+
+  <xml id="startBlocks" style="display: none">
+    <block type="variables_set" id="Zd)9U(r?}+?nG3T/68+T" x="0" y="0">
+      <field name="VAR">numCorrect</field>
+      <value name="VALUE">
+        <block type="math_number" id="B/ljtK!Z%S{jRlH+qLI!">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <next>
+        <block type="text_print" id="_dJj9W3alj)Isv_Rt;a=">
+          <value name="TEXT">
+            <shadow type="text" id="1hB~u1RzX3*?7t{6vtZi">
+              <field name="TEXT">Welcome to my quiz!</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="variables_set" id="OvBO~2~}r+a.[s%emB;S">
+              <field name="VAR">userAnswer</field>
+              <value name="VALUE">
+                <block type="text_prompt_ext" id="u|yQs8FqkRa?Sr2KnhLL">
+                  <mutation type="TEXT"></mutation>
+                  <field name="TYPE">TEXT</field>
+                  <value name="TEXT">
+                    <block type="text" id="{gI]Y5`]HxPQFx3AHw/+">
+                      <field name="TEXT">T/F: Chicken is a bird</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="controls_if" id="Q#R]Y{7C(pNpi._lm-G=">
+                  <mutation else="1"></mutation>
+                  <value name="IF0">
+                    <block type="logic_compare" id="d(rHC;lR5xI6q/[l4^VE">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="j2B^[)1{~s#S_!R%pNP=">
+                          <field name="VAR">userAnswer</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="text" id="7/*-]%Nz)?=|#RfYcT:e">
+                          <field name="TEXT">T</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="math_change" id="_^R+XOY]D+[9);cS|yF1">
+                      <field name="VAR">numCorrect</field>
+                      <value name="DELTA">
+                        <shadow type="math_number" id="7Fn9P9@p;1-00UWlLk|H">
+                          <field name="NUM">1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="text_print" id="csAwp-DJZ5UIikZp1V_N">
+                          <value name="TEXT">
+                            <shadow type="text" id="}8%ChX_Q#KTae,AD^B57">
+                              <field name="TEXT">Correct!</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <statement name="ELSE">
+                    <block type="text_print" id="gGckL%oJ{9r*T.uAga]b">
+                      <value name="TEXT">
+                        <shadow type="text" id="6d3xvA4=T?_(ZYUhJ{]k">
+                          <field name="TEXT">Incorrect!</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="variables_set" id="SBghI-p{q2.@gZy]i}r1">
+                      <field name="VAR">userAnswer</field>
+                      <value name="VALUE">
+                        <block type="text_prompt_ext" id="!RF{e_DIeZ_^u`OMD~yn">
+                          <mutation type="TEXT"></mutation>
+                          <field name="TYPE">TEXT</field>
+                          <value name="TEXT">
+                            <block type="text" id="|#^Q[KvGg(p+0^g.O#VF">
+                              <field name="TEXT">T/F: Penguin is a bird</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <next>
+                        <block type="controls_if" id="4y@M8~y},o^kB.wkgD8,">
+                          <mutation else="1"></mutation>
+                          <value name="IF0">
+                            <block type="logic_compare" id="(10-%6Bk@O|B+#/T|a#^">
+                              <field name="OP">EQ</field>
+                              <value name="A">
+                                <block type="variables_get" id="#Rbmr4-TcHsJj/;[~!04">
+                                  <field name="VAR">userAnswer</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <block type="text" id="_i,DQeloe[3gX|;N/vPT">
+                                  <field name="TEXT">F</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="math_change" id="BFu9dR9SElEO.8bds@;N">
+                              <field name="VAR">numCorrect</field>
+                              <value name="DELTA">
+                                <shadow type="math_number" id="M+10BAh)g;9^1?#V//K}">
+                                  <field name="NUM">1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="text_print" id="#UkPWSKTD1c4H3o[BKKW">
+                                  <value name="TEXT">
+                                    <shadow type="text" id="-`9.dPiR0po^lL|*a0n)">
+                                      <field name="TEXT">Correct!</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                          <statement name="ELSE">
+                            <block type="text_print" id="o?NRc?`v@F#LY[.uvR7[">
+                              <value name="TEXT">
+                                <shadow type="text" id="1U24JBz#lfmo;,~cS?mw">
+                                  <field name="TEXT">Incorrect!</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                          <next>
+                            <block type="text_print" id="Mt!YRGMj@B`9Mm/8)~bg">
+                              <value name="TEXT">
+                                <shadow type="text" id="{]h.%f#;ctsz3R;,gn3l">
+                                  <field name="TEXT">abc</field>
+                                </shadow>
+                                <block type="text_join" id="T[uZgoq!;L2eNzCNXjn9">
+                                  <mutation items="3"></mutation>
+                                  <value name="ADD0">
+                                    <block type="text" id="gzT3C1Q|w%hk:51N?pzB">
+                                      <field name="TEXT">You finished the quiz! You've answered: </field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD1">
+                                    <block type="variables_get" id="=K[drQ[4WH=7YFnP:ffj">
+                                      <field name="VAR">numCorrect</field>
+                                    </block>
+                                  </value>
+                                  <value name="ADD2">
+                                    <block type="text" id="2/y_+9RRnSNWf=g)3%=?">
+                                      <field name="TEXT"> of questions correct!</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </xml>
+</body>
+</html>

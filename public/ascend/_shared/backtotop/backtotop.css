@@ -1,0 +1,53 @@
+/*
+http://webdesignerwall.com/tutorials/animated-scroll-to-top
+
+Back to top button 
+*/
+#back-top {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	background: transparent;
+}
+
+#back-top a {
+	width: 55px;
+	display: block;
+	text-align: right;
+	font: 55px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #91C46C;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	vertical-align: middle;
+}
+
+#back-top a:hover {
+	color: #287D7D;
+	vertical-align: middle;
+}
+/* arrow icon (span tag) */
+#back-top span {
+	width: 55px;
+	height: 55px;
+	display: block;
+	margin: 0.0em auto 0.0em auto;
+	/* rounded corners */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	border: 1px;
+	text-align: center;
+	background: #C6E070
+}
+
+#back-top a:hover span {
+	background-color: #91C46C;
+}
